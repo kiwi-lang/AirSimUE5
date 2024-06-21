@@ -9,7 +9,10 @@ public class BlocksEditorTarget : TargetRules
 	{
 		Type = TargetType.Editor;
 		ExtraModuleNames.AddRange(new string[] { "Blocks" });
-        DefaultBuildSettings = BuildSettingsVersion.V2;
+        
+        IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
+        DefaultBuildSettings = BuildSettingsVersion.V5;
+
         //bUseUnityBuild = false;
         //bUsePCHFiles = false;
     }

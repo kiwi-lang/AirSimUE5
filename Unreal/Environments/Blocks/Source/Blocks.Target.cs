@@ -10,8 +10,11 @@ public class BlocksTarget : TargetRules
 		Type = TargetType.Game;
 		ExtraModuleNames.AddRange(new string[] { "Blocks" });
 
-		//bUseUnityBuild = false;
-		if (Target.Platform == UnrealTargetPlatform.Linux)
+		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
+		DefaultBuildSettings = BuildSettingsVersion.V5;
+
+        //bUseUnityBuild = false;
+        if (Target.Platform == UnrealTargetPlatform.Linux)
 			bUsePCHFiles = false;
 	}
 }
